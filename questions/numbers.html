@@ -1,32 +1,44 @@
-<div id="number">10</div>
-
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../styles.css">
+  <script type="text/javascript" src="../tester/tester.js"></script>
+  <title>Numbers</title>
+</head>
+<body>
+<h1>Numbers:</h1>
+<ul id="tests">
+</ul>
 <script type="text/javascript">
-// Test1, variable types
-function test1() {
-  var num = document.getElementById('number');
+/*
+ * INSTRUCTIONS:
+ *   Edit each one of the tests' code to make it pass. Each one has been
+ *   set up for you, all you need to do is either *fix* the code or *write
+ *   new code* to make it work.
+ *
+ *   Please don't edit the returns, that is how the tests run (where it says
+ *   do not edit this line, I mean it). Those are the expected results though,
+ *   which should give you some clue on how to write the code to make the test
+ *   pass.
+ *
+ * Any questions, hit me up on my email.
+ *
+ */
+var tests =
+[
+  // You should be able to count the values of items in an array using for loops
+  function CountingValues() {
 
-  // Do not edit below this line.
-  var result = expected(num + 10 === 20, 'The sum of "num" + 10 is 20');
-  console.log(result.message);
-  console.log(result.result, result.css);
-}
+    // Do not edit below this line.
+    return Tester.expected(
 
-test1();
-
-
-function expected(expression, message) {
-  if (expression) {
-    return {
-      message: message,
-      result: '%c PASSED',
-      css: 'color: green'
-    }
-  } else {
-    return {
-      message: message,
-      result: '%c FAILED',
-      css: 'color: red'
-    }
+    );
   }
-}
+]
+
+// Do not edit this line.
+Tester.run(document.getElementById('tests'), tests);
+
 </script>
+</body>
+</html>
