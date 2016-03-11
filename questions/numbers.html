@@ -28,10 +28,15 @@ var tests =
 [
   // You should be able to count the values of items in an array using for loops
   function CountingValues() {
+    // HINT https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+    var firstNumber = 20;
+    var secondNumber = '20';
 
+    var total = firstNumber + secondNumber;
     // Do not edit below this line.
     return Tester.expected(
-
+      total === 40,
+      'Total should equal 40'
     );
   }
 ]
