@@ -1,0 +1,41 @@
+<script type="text/javascript">
+function test1() {
+  var people = ['Greg', 'Marsha', 'Jen', 'Peter'];
+  var total = 0;
+  // HINT: use a for loop
+
+  // Do not edit below this line.
+  var result = expected(total === 18, 'The total from each of the names in "people" adds up to 18');
+  console.log(result.message);
+  console.log(result.result, result.css);
+}
+
+function test2() {
+  var people = ['Greg', 'Marsha', 'Jen', 'Peter'];
+  var bradys = 'The Brady bunch is made up of: ';
+  // Do not edit below this line.
+  var result = expected(bradys === 'The Brady bunch is made up of Greg, Marsha, Jen, Peter', 'The "bradys" var should say "The Brady bunch is made up of Greg, Marsha, Jen, Peter"');
+  console.log(result.message);
+  console.log(result.result, result.css);
+}
+
+test1();
+test2();
+
+
+function expected(expression, message) {
+  if (expression) {
+    return {
+      message: message,
+      result: '%c PASSED',
+      css: 'color: green'
+    }
+  } else {
+    return {
+      message: message,
+      result: '%c FAILED',
+      css: 'color: red'
+    }
+}
+}
+</script>

@@ -1,0 +1,29 @@
+<script type="text/javascript">
+function test1() {
+  var test = 'this is the test var';
+
+  // Do not edit below this line.
+  var result = expected(test === 'test', 'The var test should equal "test"');
+  console.log(result.message);
+  console.log(result.result, result.css);
+}
+
+test1();
+
+
+function expected(expression, message) {
+  if (expression) {
+    return {
+      message: message,
+      result: '%c PASSED',
+      css: 'color: green'
+    }
+  } else {
+    return {
+      message: message,
+      result: '%c FAILED',
+      css: 'color: red'
+    }
+}
+}
+</script>

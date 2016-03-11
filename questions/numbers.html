@@ -1,0 +1,32 @@
+<div id="number">10</div>
+
+<script type="text/javascript">
+// Test1, variable types
+function test1() {
+  var num = document.getElementById('number');
+
+  // Do not edit below this line.
+  var result = expected(num + 10 === 20, 'The sum of "num" + 10 is 20');
+  console.log(result.message);
+  console.log(result.result, result.css);
+}
+
+test1();
+
+
+function expected(expression, message) {
+  if (expression) {
+    return {
+      message: message,
+      result: '%c PASSED',
+      css: 'color: green'
+    }
+  } else {
+    return {
+      message: message,
+      result: '%c FAILED',
+      css: 'color: red'
+    }
+  }
+}
+</script>

@@ -1,0 +1,45 @@
+<script type="text/javascript">
+function test1() {
+  var person = {
+    name: 'Bob',
+    age: 24
+  }
+
+  // Do not edit below this line.
+  var result = expected(person.height === "5'6\"", 'The person "Bob" should have a height of 5\'5"');
+  console.log(result.message);
+  console.log(result.result, result.css);
+}
+
+function test2() {
+  var person = {
+
+
+  }
+
+  // Do not edit below this line.
+  var result = expected(Object.keys(person).length === 4, 'The person object should have 4 keys');
+  console.log(result.message);
+  console.log(result.result, result.css);
+}
+
+test1();
+test2();
+
+
+function expected(expression, message) {
+  if (expression) {
+    return {
+      message: message,
+      result: '%c PASSED',
+      css: 'color: green'
+    }
+  } else {
+    return {
+      message: message,
+      result: '%c FAILED',
+      css: 'color: red'
+    }
+}
+}
+</script>
