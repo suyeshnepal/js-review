@@ -31,7 +31,12 @@ var tests =
   function CountingValues() {
     var people = ['Greg', 'Marsha', 'Jen', 'Peter'];
     var total = 0;
-
+    for(x = 0; x<people.length; x++){
+      for(y = 0; y<people[x].length; y++){
+        total++;
+      }
+    }
+    //console.log(total);
 
 
     // Do not edit below this line.
@@ -45,9 +50,17 @@ var tests =
   function ArrayLengths () {
     // HINT: you should be concatenating each value of the array using +=
     var people = ['Greg', 'Marsha', 'Jen', 'Peter'];
-    var bradys = 'The Brady bunch is made up of: ';
+    var bradys = 'The Brady bunch is made up of ';
+    for(x = 0; x<people.length; x++){
+      if(x === (people.length - 1)){
+        bradys = bradys + people[x];
+      }
+      else{
+        bradys = bradys + people[x] + ", ";
+      }
+    }
 
-
+    //console.log(bradys);
 
     // Do not edit below this line.
     return Tester.expected(

@@ -30,9 +30,10 @@ var tests =
   function MakingObjects() {
     // Make the name "Joe"
     var person = {
-
+      name: "Joe"
     };
-    var name; // Insert code here
+    var name = person.name; // Insert code here
+
     // Do not edit below this line.
     return Tester.expected(
       name === 'Joe',
@@ -41,8 +42,12 @@ var tests =
   },
   function MakingMethods() {
     var person = {
-
+      talk: function(talkwhat){
+        console.log("The person says: " + talkwhat);
+      }
     };
+
+    person.talk("Hello, how are you?");
 
     // Do not edit below this line.
     return Tester.expected(
